@@ -1,0 +1,242 @@
+body {
+  font-family: Muli, sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 75px 410px 480px 1fr 1fr 385px 1fr 150px;
+
+  grid-template-areas:
+    "header header"
+    "image intro"
+    "pricing pricing"
+    "banner banner"
+    "portrait about"
+    "contact contact"
+    "banner2 banner2"
+    "footer footer";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  grid-area: header;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.6rem 0 2rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 0 0.5rem 0 0;
+  font-family: Satisfy, cursive;
+  font-weight: 300;
+  color: #d4a437;
+}
+
+header p {
+  color: #868686;
+  font-weight: 300;
+  margin-left: 0.2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5c5a5a;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 3px;
+  margin-top: 1.9rem;
+}
+
+.bouquet {
+  grid-area: image;
+  /* Prevents image from overflowing grid area */
+  max-width: 100%;
+}
+
+.intro-text {
+  background-color: #faf6dc;
+  grid-area: intro;
+  padding: 3rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: 300;
+}
+
+.pricing {
+  grid-area: pricing;
+  background-color: #faf0f0;
+}
+
+.pricing-levels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pricing-level {
+  background-color: #fff;
+  text-align: center;
+  padding: 3.5rem;
+  margin: 0 0.7rem;
+}
+
+.pricing-level ul {
+  text-align: left;
+}
+
+.banner {
+  grid-area: banner;
+  background-image: url(img/desk-roses.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.banner2 {
+  grid-area: banner2;
+  background-image: url(img/holding-hands.jpg);
+  background-position: center; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.portrait {
+  grid-area: portrait;
+
+}
+
+.portrait img {
+  max-width: 100%;
+}
+
+.about {
+  grid-area: about;
+  background-color: #faf0f0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about h2 {
+  margin-bottom: 0;
+}
+
+.about-text {
+  width: 83%;
+  font-weight: 300;
+}
+
+.contact {
+  background-color: #faf6dc;
+  grid-area: contact;
+}
+
+footer {
+  background-color: #f2f2f2;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer i {
+  padding: 1rem;
+  color: #696969;
+}
+
+footer p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.pricing button {
+  background-color: #c95572;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 1.2rem 0 1.5rem 0;
+  border: none;
+}
+
+.form-left {
+  display: inline-block;
+  text-align: right;
+  width: 30%;
+  padding-right: 0.5rem;
+  margin-top: 10px
+}
+
+.form-right {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  vertical-align: middle;
+}
+
+.form-item {
+  margin: 1.2rem 0;
+}
+
+input {
+  padding: 0.55rem;
+  border-radius: 2px;
+  border: none;
+}
+
+textarea {
+  padding: 0.55rem;
+  height: 4rem;
+  border: none;
+  border-radius: 2px;
+}
+
+.contact-button {
+  text-align: center;
+}
+
+form button {
+  background-color: #e2a929;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 1.2rem 0 1.5rem 0;
+  border: none;
+}
+
+i:hover, button:hover {
+  transform: scale(1.1);
+}
