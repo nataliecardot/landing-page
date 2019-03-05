@@ -7,7 +7,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 75px 410px 480px 1fr 1fr 385px 1fr 150px;
+  grid-template-rows: 75px 410px 480px 380px 500px 420px 420px 150px;
 
   grid-template-areas:
     "header header"
@@ -69,16 +69,19 @@ nav ul li a {
 }
 
 h2 {
+  font-size: 1.4rem;
+  margin-top: 3rem;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  letter-spacing: 3px;
-  margin-top: 1.9rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 .bouquet {
   grid-area: image;
-  /* Prevents image from overflowing grid area */
-  max-width: 100%;
+  background-image: url(img/bouquet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .intro-text {
@@ -115,21 +118,22 @@ h2 {
 .banner {
   grid-area: banner;
   background-image: url(img/desk-roses.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .banner2 {
   grid-area: banner2;
   background-image: url(img/holding-hands.jpg);
-  background-position: center; 
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .portrait {
   grid-area: portrait;
-
+  background-image: url(img/holding-camera.jpg);
+  background-size: cover;
 }
 
 .portrait img {
@@ -144,12 +148,8 @@ h2 {
   flex-direction: column;
 }
 
-.about h2 {
-  margin-bottom: 0;
-}
-
 .about-text {
-  width: 83%;
+  width: 80%;
   font-weight: 300;
 }
 
