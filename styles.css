@@ -110,7 +110,7 @@ h2 {
   display: flex;
   align-items: center;
   /* Less padding on top and bottom to account for extra space above and below p element */
-  padding: 3rem 5.5rem 3rem 5.5rem;
+  padding: 5rem 5.5rem 5rem 5.5rem;
 }
 
 .intro-text-paragraphs {
