@@ -393,7 +393,7 @@ i:hover, button:hover {
 }
 
 /* Tablets/medium devices */
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: auto 55rem auto auto 50rem auto auto auto 42rem auto;
