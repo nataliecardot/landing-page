@@ -4,10 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html {
-  /* scroll-behavior: smooth; */
-}
-
 body {
   font-family: Muli, sans-serif;
   margin: 0;
