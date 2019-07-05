@@ -33,6 +33,7 @@ body {
 header {
   /* Unlike position: fixed, doesn't overlap content that follows header */
   position: sticky;
+  -webkit-position: sticky;
   /* Needed for use of position: sticky; */
   top: 0;
   grid-area: header;
